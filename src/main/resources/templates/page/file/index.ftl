@@ -5,7 +5,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>file</title>
+    <title>文件管理系统</title>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -17,7 +17,8 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/bootstrap-table@1.14.1/dist/bootstrap-table.min.js"></script>
+    <script src="${ctx}/static/bootstrap/bootstrap-table.min.js"></script>
+    <script src="${ctx}/static/bootstrap/bootstrap-table-zh-CN.js"></script>
 
     <script type="text/javascript">
         var ctx = '${ctx!''}';
@@ -30,7 +31,6 @@
         background-image: url(${ctx}/static/images/background.png);
         background-attachment: fixed;
     }
-
     .container h1 {
         text-align: center;
         color: white;
@@ -74,7 +74,7 @@
 <div class="container" style="opacity:0.75;">
 
     <div class="starter-template">
-        <h1 style="cursor:pointer;" onclick="javascrtpt:window.location.href='${ctx!''}/log'">文件管理系统</h1><span style="color: #CCC;">powered by houyu [ shaines.cn ]</span>
+        <h1 style="cursor:pointer;" onclick="javascrtpt:window.location.href='${ctx!''}/log'">文件管理系统</h1><span style="color: #CCC;display: none">powered by houyu [ shaines.cn ]</span>
         <div class="row">
             <h2>
                 文件列表

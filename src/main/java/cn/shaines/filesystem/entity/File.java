@@ -10,7 +10,7 @@ import javax.persistence.Transient;
  * @author houyu
  * @createTime 2019/3/9 21:42
  */
-@Entity
+@Entity(name="file")
 public class File {
 
     @Id

@@ -142,7 +142,7 @@ public class FileController {
      */
     @PostMapping("/upload")
     @ResponseBody
-    @ChainRequired(ChainRequired.Type.CHECK)
+    //@ChainRequired(ChainRequired.Type.CHECK)
     public Result upload(@RequestParam("file") MultipartFile multipartFile, HttpServletRequest request) throws IOException {
         // 获取文件名
         String filename = multipartFile.getOriginalFilename();

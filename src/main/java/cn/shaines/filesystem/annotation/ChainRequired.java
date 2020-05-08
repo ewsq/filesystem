@@ -14,12 +14,13 @@ import java.lang.annotation.Target;
 public @interface ChainRequired {
 
     // 代表是否需要检查
-    Type value() default Type.CHECK;
+    //Type value() default Type.CHECK;
+    Type value() default Type.PASS;
 
     enum Type {
         // 需要检查
         CHECK,
-        // 直接放行
+        //直接放行
         PASS
     }
 }
